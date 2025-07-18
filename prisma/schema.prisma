@@ -39,7 +39,7 @@ model Company{
 model Team{
 
   id Int @id() @default(autoincrement())
-  team_name String
+  team_name String @unique()
   members User[]
 
 }
